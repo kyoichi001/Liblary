@@ -1,4 +1,6 @@
 # 自作ライブラリ保管
 
-## ModInt
-- [ModInt](https://github.com/kyoichi001/Liblary/blob/master/modint.cpp)
+
+## 整数
+- [ModInt](https://github.com/kyoichi001/Liblary/blob/master/C++/ModInt.cpp)
+- [ModInt](https://github.com/kyoichi001/Liblary/blob/master/C++/BigInt.cpp)

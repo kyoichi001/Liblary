@@ -1,4 +1,6 @@
 # 自作ライブラリ保管
+自分で制作したライブラリを保管しています。主にC++かUnity(C#)になると思います。
+
 
 ## C++
 ### 整数
@@ -9,4 +11,4 @@
 - [補間クラス Easing](https://github.com/kyoichi001/Liblary/tree/master/C%2B%2B/Easing)
 - [ゲーム内オブジェクト管理リスト ObjectList](https://github.com/kyoichi001/Liblary/tree/master/C%2B%2B/ObjectList)
 
-## Unity
+## Unity(C#)

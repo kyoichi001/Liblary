@@ -1,9 +1,9 @@
 
-#define DEBUG
-
 #include "InterpolationMethod.h"
-#include "../Math/Constant.h"
 #include <cmath>
+
+#define PI 3.14159265f
+#define HALF_PI 1.57079632679f
 
 float lerp(float Value1, float Value2, int min, int max, int NowTime, EasingFunc func)noexcept {
 

@@ -1,3 +1,6 @@
+
+#include<iostream>
+
 template<long N>
 class ModInt {
 	using mType = long;

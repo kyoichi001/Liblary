@@ -18,9 +18,12 @@
 - [2次元用](https://github.com/kyoichi001/Liblary/blob/master/C++/Collision/Morton2D.h)
 モートン符号を利用した2次元空間分割。
 四分木にオブジェクトを挿入し、探索を効率化。更新は全要素を削除してからまたすべて挿入しなおす。
-挿入 O(1)
-全要素削除 O(N)
-探索 O(logN ? )
+	- 挿入 O(1)
+	- 全要素削除 O(N)
+	- 探索 O(logN ? )
+
+### その他競プロ用など
+- [UnionFind](https://github.com/kyoichi001/Liblary/blob/master/C++/UnionFind.h)
 
 - [3次元用](https://github.com/kyoichi001/Liblary/blob/master/C++/Collision/Morton3D.cpp)
 モートン符号を利用した3次元空間分割。

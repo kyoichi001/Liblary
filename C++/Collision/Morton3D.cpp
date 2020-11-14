@@ -1,6 +1,8 @@
 #include "VecInt3.cpp"
 #include "Vec3.cpp"
 
+using  ll = long long;
+
 namespace myLib {
 	ll max(ll a, ll b, ll c) {
 		int res = a < b ? b : a;

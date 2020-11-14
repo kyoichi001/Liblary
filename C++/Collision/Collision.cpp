@@ -14,7 +14,8 @@ bool IsHit(const Point& Obj1, const Segment& Obj2)noexcept {
 	return (p - Obj2.begin).closs(p - Obj2.end) == 0.0f;
 }
 bool IsHit(const Point& Obj1, const Rect& Obj2)noexcept {
-	return RANGE(Obj2.tl.x, Obj1.x, Obj2.tl.x + Obj2.width) &&
+	return
+		RANGE(Obj2.tl.x, Obj1.x, Obj2.tl.x + Obj2.width) &&
 		RANGE(Obj2.tl.x, Obj1.x, Obj2.tl.x + Obj2.width);
 }
 bool IsHit(const Point& Obj1, const Capsule& Obj2)noexcept {

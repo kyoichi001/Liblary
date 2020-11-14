@@ -16,23 +16,25 @@
 
 ### 空間分割
 - [2次元用](https://github.com/kyoichi001/Liblary/blob/master/C++/Collision/Morton2D.h)
-モートン符号を利用した2次元空間分割。
-四分木にオブジェクトを挿入し、探索を効率化。更新は全要素を削除してからまたすべて挿入しなおす。
-	- 挿入 O(1)
-	- 全要素削除 O(N)
-	- 探索 O(logN ? )
+	- モートン符号を利用した2次元空間分割。
+	- 四分木にオブジェクトを挿入し、探索を効率化。更新は全要素を削除してからまたすべて挿入しなおす。
+		- 挿入 O(1)
+		- 全要素削除 O(N)
+		- 探索 O(logN ? )
+- [3次元用](https://github.com/kyoichi001/Liblary/blob/master/C++/Collision/Morton3D.cpp)
+	- モートン符号を利用した3次元空間分割。
+	- 2次元のものとほとんど同じ。
 
 ### その他競プロ用など
-- [UnionFind](https://github.com/kyoichi001/Liblary/blob/master/C++/UnionFind.h)
-
-- [3次元用](https://github.com/kyoichi001/Liblary/blob/master/C++/Collision/Morton3D.cpp)
-モートン符号を利用した3次元空間分割。
-2次元のものとほとんど同じ。
+[UnionFind](https://github.com/kyoichi001/Liblary/blob/master/C++/UnionFind.h)
 
 ## Unity(C#)
 - [シングルトン Singleton](https://github.com/kyoichi001/Liblary/blob/master/C%23/SingletonMonoBehaviour.cs)
 - [エンティティ Checkable](https://github.com/kyoichi001/Liblary/blob/master/C%23/Charactor/Checkable.cs)
 - [エンティティチェック Checker](https://github.com/kyoichi001/Liblary/blob/master/C%23/Charactor/Checker.cs)
+- [パラメータ管理 Parameter](https://github.com/kyoichi001/Liblary/blob/master/C%23/Charactor/Parameter.cs)
+- [バフ・デバフ Buf](https://github.com/kyoichi001/Liblary/blob/master/C%23/Charactor/Buf.cs)
 - [HP管理 Damageable](https://github.com/kyoichi001/Liblary/blob/master/C%23/Charactor/Damageable.cs)
 - [攻撃管理 Damager](https://github.com/kyoichi001/Liblary/blob/master/C%23/Charactor/Damager.cs)
 - [BGM管理 BGMManager](https://github.com/kyoichi001/Liblary/blob/master/C%23/Audio/BGMManager.cs)
+- [CSV読み書き BGMManager](https://github.com/kyoichi001/Liblary/blob/master/C%23/CSVReader.cs)

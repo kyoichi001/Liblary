@@ -26,7 +26,11 @@
 	- 2次元のものとほとんど同じ。
 
 ### その他競プロ用など
-[UnionFind](https://github.com/kyoichi001/Liblary/blob/master/C++/UnionFind.h)
+- [UnionFind](https://github.com/kyoichi001/Liblary/blob/master/C++/UnionFind.h)
+	- Unionfind
+	- 各グループの要素数を求める関数追加(O(N))
+- [dijkstra](https://github.com/kyoichi001/Liblary/blob/master/C++/dijkstra.h)
+	- ダイクストラ法
 
 ## Unity(C#)
 - [シングルトン Singleton](https://github.com/kyoichi001/Liblary/blob/master/C%23/SingletonMonoBehaviour.cs)
@@ -37,4 +41,4 @@
 - [HP管理 Damageable](https://github.com/kyoichi001/Liblary/blob/master/C%23/Charactor/Damageable.cs)
 - [攻撃管理 Damager](https://github.com/kyoichi001/Liblary/blob/master/C%23/Charactor/Damager.cs)
 - [BGM管理 BGMManager](https://github.com/kyoichi001/Liblary/blob/master/C%23/Audio/BGMManager.cs)
-- [CSV読み書き BGMManager](https://github.com/kyoichi001/Liblary/blob/master/C%23/CSVReader.cs)
+- [CSV読み書き CSVReader](https://github.com/kyoichi001/Liblary/blob/master/C%23/CSVReader.cs)

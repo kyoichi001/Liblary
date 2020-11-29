@@ -1,29 +1,13 @@
-//https://qiita.com/drken/items/3b4fdf0a78e7a138cd9a
 
 #include<iostream>
 template<long N>
 class ModInt {
-	using mType = long;
-	mType a;
-
-
-	constexpr int fracSize=10000000;
-	mType frac[fracSize];
-	mType fracInv[fracSize];
-	mType inv[fracSize];
-	void Calc() {
-		frac[0] = frac[1] = 1;
-		fracInv[0] = fracInv[1] = 1;
-		inv[1] = 1;
-		for (int i = 2; i < fracSize; i++) {
-			frac[i] = (i * frac[i - 1]) % N;
-			inv[i] = N - inv[N % i] * (N / i) % N;
-			finv[i] = finv[i - 1] * inv[i] % N;
-		}
-	}
-
 public:
-	ModInt() :a(0) { Calc(); }
+	using mType = long long;
+private:
+	mType a;
+public:
+	ModInt() :a(0) {  }
 	ModInt(mType a_) {
 		if (a_ < 0) {
 			a = N - ((-a_) % N);
@@ -31,7 +15,6 @@ public:
 		else {
 			a = a_ % N;
 		}
-		Calc();
 	}
 
 	mType get()const { return a; }
@@ -43,10 +26,10 @@ public:
 	ModInt operator/(const ModInt& rhs) const { return ModInt(*this) /= rhs; }
 
 	bool operator==(const ModInt& rhs)const { return a == rhs.a; }
-	bool operator> (const ModInt& rhs)const { return a >  rhs.a; }
+	bool operator> (const ModInt& rhs)const { return a > rhs.a; }
 	bool operator>=(const ModInt& rhs)const { return a >= rhs.a; }
 	bool operator<=(const ModInt& rhs)const { return a <= rhs.a; }
-	bool operator< (const ModInt& rhs)const { return a <  rhs.a; }
+	bool operator< (const ModInt& rhs)const { return a < rhs.a; }
 
 	ModInt& operator+=(const ModInt& rhs) {
 		a += rhs.a;
@@ -81,19 +64,7 @@ public:
 		return res;
 	}
 	ModInt inv()const {
-		return pow(N - 2);//inv[a];
-	}
-
-	mType nPk(int n, int k) {
-		if (n < k) return 0;
-		if (n < 0 || k < 0) return 0;
-		return (frac[n] * fracInv[n - k]) % N;
-	}
-	// 二項係数計算
-	mType nCk(int n, int k) {
-		if (n < k) return 0;
-		if (n < 0 || k < 0) return 0;
-		return frac[n] * (fracInv[k] * fracInv[n - k] % N) % N;
+		return pow(N - 2);
 	}
 };
 
@@ -107,7 +78,16 @@ template<long N>
 ModInt<N> operator/(long a, const ModInt<N>& n) { return a * n.inv(); }
 
 template<long N>
-std::ostream& operator<<(std::ostream& os, const ModInt<N>& n) {
-	os << n.get();
-	return os;
+std::ostream& operator<<(std::ostream& ost, const ModInt<N>& n) {
+	ost << n.get();
+	return ost;
+}
+
+template<long N>
+std::istream& operator>>(std::istream& ist, const ModInt<N>& n)
+{
+	typename ModInt<N>::mType value;
+	ist >> value;
+	n = value;
+	return ist;
 }

@@ -70,10 +70,7 @@ public:
 		return Fraction<T>(numerator * a + frac.numerator * b, l);
 	}
 	Fraction<T> operator -(const Fraction<T>& frac)const {
-		T l = lcm(denominator, frac.denominator);
-		T a = l / denominator;
-		T b = l / frac.denominator;
-		return Fraction<T>(numerator * a - frac.numerator * b, l);
+		return *this + -*this;
 	}
 	Fraction<T> operator *(const Fraction<T>& frac)const {
 		return Fraction<T>(numerator * frac.numerator, denominator * frac.denominator);

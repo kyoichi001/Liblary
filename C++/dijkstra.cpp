@@ -8,9 +8,9 @@ class Graph {
 public :
 	using Type = long long;
 private:
-	struct edge { Type to, cost; };
 	Type V;
 public:
+	struct edge { Type to, cost; };
 	std::vector<std::vector<edge> > G;//隣接頂点リスト
 	const Type INF;
 	Graph(Type n) :INF(std::numeric_limits<Type>::max()) {

@@ -7,6 +7,7 @@
 - [剰余環 ModInt](https://github.com/kyoichi001/Liblary/blob/master/C++/ModInt.cpp)
 - [多倍長整数 BigInt](https://github.com/kyoichi001/Liblary/blob/master/C++/BigInt.cpp)
 - [分数 Fraction](https://github.com/kyoichi001/Liblary/blob/master/C++/Fraction.cpp)
+- [行列・ベクトル Matrix Vector](https://github.com/kyoichi001/Liblary/blob/master/C++/Matrix.cpp)
 
 ### ゲーム用
 - [補間クラス Easing](https://github.com/kyoichi001/Liblary/tree/master/C%2B%2B/Easing)
